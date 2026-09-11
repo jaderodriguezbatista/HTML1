@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Mi nombre es Jade Rodríguez</title>
+
+    <style>
+
+        body {
+            background-color: lightpink;
+            text-align: center;
+        }
+
+        h1 {
+            color: black;
+        }
+
+        p {
+            font-size: 20px;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        button {
+            background-color: lightblue;
+            color: brown;
+            font-size: 16px;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 20px;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        nav {
+            background-color: white;
+            padding: 15px;
+            margin-bottom: 30px;
+        }
+
+        nav a {
+            color: black;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        section {
+            margin: 30px auto;
+            padding: 30px;
+            max-width: 700px;
+        }
+#sobre-mi {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0 ,0 ,0 ,0.2);
+}
+#sobre-mi button:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+#mensaje {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#mensaje.mostrar {
+    opacity: 1;
+}
+
+form {
+    background-color: white;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 120px;
+    resize: none;
+}
+
+form button {
+    margin-top: 20px;
+}
+    </style>
+
+</head>
+
+<body>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <section id="inicio">
+
+        <h1>Jade Rodríguez</h1>
+
+        <img src="IMAGENES/foto.jpeg" alt="Mi imagen">
+
+    </section>
+
+
+    <section id="sobre-mi">
+
+        <h2>Sobre mí</h2>
+
+        <p>
+            Algo que me identifica es que me gusta aprender muchas cosas
+            y tener conocimientos de todas las áreas.
+        </p>
+
+        <button onclick="mostrarMensaje()">
+            ¿Quieres conocerme mejor?
+        </button>
+
+        <p id="mensaje"></p>
+
+    </section>
+
+
+    <section id="contacto">
+    <h2>Contacto</h2>
+
+<form action="https://formsubmit.co/jrdguezbatista@gmail.com" method="POST">
+
+    <input type="hidden" name="_subject" value="Nuevo mensaje desde mi página">
+
+    <input type="hidden" name="_next" value="http://127.0.0.1:5500/gracias.html">
+
+    <input type="hidden" name="_replyto" value="">
+
+    <label for="nombre">Nombre:</label>
+    <input
+        type="text"
+        id="nombre"
+        name="nombre"
+        placeholder="Escribe tu nombre"
+        required
+    >
+
+    <label for="correo">Correo:</label>
+    <input
+        type="email"
+        id="correo"
+        name="email"
+        placeholder="Escribe tu correo"
+        required
+    >
+
+    <label for="mensajeContacto">Mensaje:</label>
+    <textarea
+        id="mensajeContacto"
+        name="mensaje"
+        placeholder="Escribe tu mensaje"
+        required
+    ></textarea>
+
+    <button type="submit">Enviar mensaje</button>
+
+</form>
+    <p id="respuesta"></p>
+</section>
+
+
+    <script>
+
+        function mostrarMensaje() {
+    let mensaje = document.getElementById("mensaje");
+
+    if (mensaje.classList.contains ("mostrar")) {
+        mensaje.classList.remove ("mostrar");
+    }   else {
+        mensaje.innerHTML = "Hiiii";
+        mensaje.classList.add("mostrar");
+    }
+}
+    </script>
+
+</body>
+
+</html>
