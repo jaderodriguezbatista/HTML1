@@ -6,343 +6,394 @@
 
     <title>Mi nombre es Jade Rodríguez</title>
 
-   <style>
+    <style>
 
-    * {
-        box-sizing: border-box;
-    }
+        /* CONFIGURACIÓN GENERAL */
 
-    html {
-        scroll-behavior: smooth;
-    }
+        * {
+            box-sizing: border-box;
+        }
 
-    body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background: linear-gradient(135deg, #ffd6e7, #e8d9ff);
-        color: #333;
-        text-align: center;
-    }
+        html {
+            scroll-behavior: smooth;
+        }
 
-    /* MENÚ */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ffd6e7, #e8d9ff);
+            color: #333;
+            text-align: center;
+        }
 
-    nav {
-        background-color: rgba(255, 255, 255, 0.95);
-        padding: 18px;
-        position: sticky;
-        top: 0;
-        z-index: 1000;
-        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-    }
 
-    nav a {
-        color: #333;
-        text-decoration: none;
-        margin: 0 15px;
-        font-size: 17px;
-        font-weight: bold;
-        transition: 0.3s;
-    }
+        /* MENÚ */
 
-    nav a:hover {
-        color: #d63384;
-    }
-
-    /* SECCIONES */
-
-    section {
-        margin: 50px auto;
-        padding: 40px 25px;
-        max-width: 800px;
-    }
-
-    /* INICIO */
-
-    #inicio {
-        padding-top: 70px;
-    }
-
-    h1 {
-        font-size: 48px;
-        margin-bottom: 15px;
-        color: #222;
-    }
-
-    #inicio p {
-        font-size: 21px;
-        color: #555;
-    }
-
-    img {
-        width: 220px;
-        height: 220px;
-        border-radius: 50%;
-        object-fit: cover;
-        border: 6px solid white;
-        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-        margin-top: 20px;
-    }
-
-    /* SOBRE MÍ */
-
-    #sobre-mi {
-        background-color: rgba(255, 255, 255, 0.95);
-        border-radius: 25px;
-        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
-    }
-
-    h2 {
-        font-size: 32px;
-        color: #d63384;
-        margin-bottom: 20px;
-    }
-
-    p {
-        font-size: 19px;
-        line-height: 1.7;
-        max-width: 600px;
-        margin: 20px auto;
-    }
-
-    /* BOTONES */
-
-    button {
-        background: linear-gradient(135deg, #d63384, #a855f7);
-        color: white;
-        font-size: 16px;
-        font-weight: bold;
-        padding: 14px 25px;
-        border: none;
-        border-radius: 30px;
-        cursor: pointer;
-        transition: 0.3s;
-        box-shadow: 0 5px 15px rgba(214, 51, 132, 0.3);
-    }
-
-    button:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 8px 20px rgba(214, 51, 132, 0.4);
-    }
-
-    /* MENSAJE */
-
-    #mensaje {
-        opacity: 0;
-        transition: opacity 0.5s ease;
-        margin-top: 20px;
-        font-size: 22px;
-        font-weight: bold;
-        color: #d63384;
-    }
-
-    #mensaje.mostrar {
-        opacity: 1;
-    }
-
-    /* CONTACTO */
-
-    form {
-        background-color: rgba(255, 255, 255, 0.95);
-        max-width: 550px;
-        margin: 20px auto;
-        padding: 35px;
-        border-radius: 25px;
-        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
-    }
-
-    label {
-        display: block;
-        text-align: left;
-        margin-top: 18px;
-        font-weight: bold;
-        color: #444;
-    }
-
-    input,
-    textarea {
-        width: 100%;
-        padding: 14px;
-        margin-top: 8px;
-        border: 2px solid #eee;
-        border-radius: 12px;
-        font-size: 16px;
-        outline: none;
-        transition: 0.3s;
-    }
-
-    input:focus,
-    textarea:focus {
-        border-color: #d63384;
-        box-shadow: 0 0 8px rgba(214, 51, 132, 0.2);
-    }
-
-    textarea {
-        height: 130px;
-        resize: none;
-    }
-
-    form button {
-        margin-top: 25px;
-        width: 100%;
-    }
-
-    /* CELULARES */
-
-    @media (max-width: 600px) {
+        nav {
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 18px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
 
         nav a {
-            margin: 0 7px;
-            font-size: 14px;
+            color: #333;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 17px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #d63384;
+        }
+
+
+        /* SECCIONES */
+
+        section {
+            margin: 50px auto;
+            padding: 40px 25px;
+            max-width: 800px;
+        }
+
+
+        /* INICIO */
+
+        #inicio {
+            padding-top: 70px;
         }
 
         h1 {
-            font-size: 36px;
+            font-size: 48px;
+            margin-bottom: 15px;
+            color: #222;
         }
 
-        h2 {
-            font-size: 28px;
-        }
-
-        section {
-            margin: 30px auto;
-            padding: 30px 15px;
+        #inicio p {
+            font-size: 21px;
+            color: #555;
         }
 
         img {
-            width: 180px;
-            height: 180px;
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 6px solid white;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
         }
+
+
+        /* SOBRE MÍ */
+
+        #sobre-mi {
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 25px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+        }
+
+        h2 {
+            font-size: 32px;
+            color: #d63384;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 19px;
+            line-height: 1.7;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+
+        /* BOTONES */
+
+        button {
+            background: linear-gradient(135deg, #d63384, #a855f7);
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 14px 25px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: 0.3s;
+            box-shadow: 0 5px 15px rgba(214, 51, 132, 0.3);
+        }
+
+        button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(214, 51, 132, 0.4);
+        }
+
+
+        /* MENSAJE */
+
+        #mensaje {
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            margin-top: 20px;
+            font-size: 22px;
+            font-weight: bold;
+            color: #d63384;
+        }
+
+        #mensaje.mostrar {
+            opacity: 1;
+        }
+
+
+        /* SERVICIOS */
+
+        #servicios {
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 25px;
+            padding: 40px 25px;
+        }
+
+        #servicios h2 {
+            width: 100%;
+        }
+
+        .servicio {
+            display: inline-block;
+            vertical-align: top;
+            background-color: white;
+            width: 220px;
+            min-height: 250px;
+            margin: 10px;
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+            transition: 0.3s;
+        }
+
+        .servicio:hover {
+            transform: translateY(-8px);
+        }
+
+        .servicio h3 {
+            color: #d63384;
+        }
+
+        .servicio p {
+            font-size: 16px;
+        }
+
+
+        /* PROYECTOS */
+
+        #proyectos {
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 25px;
+        }
+
+        .proyecto {
+            background-color: white;
+            max-width: 500px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+        }
+
+        .proyecto h3 {
+            color: #d63384;
+            font-size: 24px;
+        }
+
+        .proyecto p {
+            font-size: 17px;
+        }
+
+
+        /* CONTACTO */
 
         form {
-            padding: 25px 20px;
+            background-color: rgba(255, 255, 255, 0.95);
+            max-width: 550px;
+            margin: 20px auto;
+            padding: 35px;
+            border-radius: 25px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
         }
-    }
-    #servicios {
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 25px;
-    padding: 40px 25px;
-}
 
-#servicios h2 {
-    width: 100%;
-}
+        label {
+            display: block;
+            text-align: left;
+            margin-top: 18px;
+            font-weight: bold;
+            color: #444;
+        }
 
-.servicio {
-    display: inline-block;
-    vertical-align: top;
-    background-color: white;
-    width: 220px;
-    min-height: 250px;
-    margin: 10px;
-    padding: 25px;
-    border-radius: 20px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-    transition: 0.3s;
-}
+        input,
+        textarea {
+            width: 100%;
+            padding: 14px;
+            margin-top: 8px;
+            border: 2px solid #eee;
+            border-radius: 12px;
+            font-size: 16px;
+            outline: none;
+            transition: 0.3s;
+        }
 
-.servicio {
-    background-color: white;
-    width: 220px;
-    padding: 25px;
-    border-radius: 20px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-    transition: 0.3s;
-}
+        input:focus,
+        textarea:focus {
+            border-color: #d63384;
+            box-shadow: 0 0 8px rgba(214, 51, 132, 0.2);
+        }
 
-.servicio:hover {
-    transform: translateY(-8px);
-}
+        textarea {
+            height: 130px;
+            resize: none;
+        }
 
-.servicio h3 {
-    color: #d63384;
-}
+        form button {
+            margin-top: 25px;
+            width: 100%;
+        }
 
-.servicio p {
-    font-size: 16px;
-}
 
-.whatsapp-flotante {
-    position: fixed;
-    bottom: 25px;
-    right: 25px;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background-color: #25D366;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    font-size: 28px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
-    z-index: 9999;
-    transition: 0.3s;
-}
+        /* BOTÓN FLOTANTE DE WHATSAPP */
 
-.whatsapp-flotante:hover {
-    transform: scale(1.1);
-}
-#proyectos {
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 25px;
-}
+        .whatsapp-flotante {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: #25D366;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 28px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+            z-index: 9999;
+            transition: 0.3s;
+        }
 
-.proyecto {
-    background-color: white;
-    max-width: 500px;
-    margin: auto;
-    padding: 30px;
-    border-radius: 20px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-}
+        .whatsapp-flotante:hover {
+            transform: scale(1.1);
+        }
 
-.proyecto h3 {
-    color: #d63384;
-    font-size: 24px;
-}
 
-.proyecto p {
-    font-size: 17px;
-}
-</style>
+        /* CELULARES */
+
+        @media (max-width: 600px) {
+
+            nav a {
+                margin: 0 7px;
+                font-size: 14px;
+            }
+
+            h1 {
+                font-size: 36px;
+            }
+
+            h2 {
+                font-size: 28px;
+            }
+
+            section {
+                margin: 30px auto;
+                padding: 30px 15px;
+            }
+
+            img {
+                width: 180px;
+                height: 180px;
+            }
+
+            form {
+                padding: 25px 20px;
+            }
+
+            .servicio {
+                width: 90%;
+                margin: 10px auto;
+            }
+
+            .whatsapp-flotante {
+                width: 55px;
+                height: 55px;
+                bottom: 20px;
+                right: 20px;
+            }
+        }
+
+    </style>
 
 </head>
 
+
 <body>
 
+
+    <!-- MENÚ -->
+
     <nav>
+
         <a href="#inicio">Inicio</a>
+
         <a href="#sobre-mi">Sobre mí</a>
+
         <a href="#servicios">Servicios</a>
+
         <a href="#proyectos">Proyectos</a>
+
         <a href="#contacto">Contacto</a>
+
     </nav>
+
+
+    <!-- INICIO -->
 
     <section id="inicio">
 
-    <h1>Hola, soy Jade Rodríguez 👋</h1>
+        <h1>Hola, soy Jade Rodríguez 👋</h1>
 
-    <p>
-        Estoy aprendiendo desarrollo web y creando páginas modernas,
-        atractivas y adaptadas a dispositivos móviles.
-    </p>
+        <p>
+            Estoy aprendiendo desarrollo web y creando páginas modernas,
+            atractivas y adaptadas a dispositivos móviles.
+        </p>
 
-    <img src="IMAGENES/foto.jpeg" alt="Foto de Jade">
+        <img
+            src="IMAGENES/foto.jpeg"
+            alt="Foto de Jade"
+        >
 
-    <br><br>
+        <br>
+        <br>
 
-    <a href="#contacto">
-        <button>Contáctame</button>
-    </a>
+        <a href="#contacto">
+            <button>Contáctame</button>
+        </a>
 
-    <a href="https://wa.me/18495953966?text=Hola%20Jade,%20vi%20tu%20página%20web%20y%20me%20gustaría%20conocerte%20más."
-   target="_blank">
-    <button>💬 Escríbeme por WhatsApp</button>
-</a>
 
-</section>
+        <a
+            href="https://wa.me/18495953966?text=Hola%20Jade,%20vi%20tu%20página%20web%20y%20me%20gustaría%20conocerte%20más."
+            target="_blank"
+        >
 
+            <button>
+                💬 Escríbeme por WhatsApp
+            </button>
+
+        </a>
+
+    </section>
+
+
+    <!-- SOBRE MÍ -->
 
     <section id="sobre-mi">
 
@@ -361,117 +412,200 @@
 
     </section>
 
+
+    <!-- SERVICIOS -->
+
     <section id="servicios">
 
-    <h2>Mis servicios</h2>
+        <h2>Mis servicios</h2>
 
-    <div class="servicio">
-        <h3>🌐 Creación de páginas web</h3>
-        <p>
-            Creo páginas web sencillas, modernas y adaptadas
-            a computadoras y celulares.
-        </p>
-    </div>
 
-    <div class="servicio">
-        <h3>🎨 Diseño y personalización</h3>
-        <p>
-            Personalizo colores, textos, imágenes y estilos
-            para darle a cada página una apariencia única.
-        </p>
-    </div>
+        <div class="servicio">
 
-    <div class="servicio">
-        <h3>💬 Formularios de contacto</h3>
-        <p>
-            Puedo integrar formularios para que los visitantes
-            puedan enviar mensajes directamente.
-        </p>
-    </div>
+            <h3>
+                🌐 Creación de páginas web
+            </h3>
 
-</section>
+            <p>
+                Creo páginas web sencillas, modernas y adaptadas
+                a computadoras y celulares.
+            </p>
 
-<section id="proyectos">
+        </div>
 
-    <h2>Mis proyectos</h2>
 
-    <div class="proyecto">
-        <h3>🌸 Mi primera página web</h3>
+        <div class="servicio">
 
-        <p>
-            Este es mi primer proyecto web. Lo creé utilizando
-            HTML, CSS y JavaScript mientras aprendía desarrollo web.
-        </p>
+            <h3>
+                🎨 Diseño y personalización
+            </h3>
 
-        <a href="#inicio">
-            <button>Ver proyecto</button>
-        </a>
-    </div>
+            <p>
+                Personalizo colores, textos, imágenes y estilos
+                para darle a cada página una apariencia única.
+            </p>
 
-</section>
+        </div>
+
+
+        <div class="servicio">
+
+            <h3>
+                💬 Formularios de contacto
+            </h3>
+
+            <p>
+                Puedo integrar formularios para que los visitantes
+                puedan enviar mensajes directamente.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROYECTOS -->
+
+    <section id="proyectos">
+
+        <h2>Mis proyectos</h2>
+
+
+        <div class="proyecto">
+
+            <h3>
+                🌸 Mi primera página web
+            </h3>
+
+            <p>
+                Este es mi primer proyecto web. Lo creé utilizando
+                HTML, CSS y JavaScript mientras aprendía desarrollo web.
+            </p>
+
+            <a href="#inicio">
+
+                <button>
+                    Ver proyecto
+                </button>
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACTO -->
+
     <section id="contacto">
-    <h2>Contacto</h2>
 
-<form action="https://formsubmit.co/jrdguezbatista@gmail.com" method="POST">
+        <h2>Contacto</h2>
 
-    <input type="hidden" name="_subject" value="Nuevo mensaje desde mi página">
 
-    <input type="hidden" name="_next" value="http://127.0.0.1:5500/gracias.html">
+        <form
+            action="https://formsubmit.co/jrdguezbatista@gmail.com"
+            method="POST"
+        >
 
-    <input type="hidden" name="_replyto" value="">
+            <input
+                type="hidden"
+                name="_subject"
+                value="Nuevo mensaje desde mi página"
+            >
 
-    <label for="nombre">Nombre:</label>
-    <input
-        type="text"
-        id="nombre"
-        name="nombre"
-        placeholder="Escribe tu nombre"
-        required
+            <input
+                type="hidden"
+                name="_next"
+                value="http://127.0.0.1:5500/gracias.html"
+            >
+
+
+            <label for="nombre">
+                Nombre:
+            </label>
+
+            <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                placeholder="Escribe tu nombre"
+                required
+            >
+
+
+            <label for="correo">
+                Correo:
+            </label>
+
+            <input
+                type="email"
+                id="correo"
+                name="email"
+                placeholder="Escribe tu correo"
+                required
+            >
+
+
+            <label for="mensajeContacto">
+                Mensaje:
+            </label>
+
+            <textarea
+                id="mensajeContacto"
+                name="mensaje"
+                placeholder="Escribe tu mensaje"
+                required
+            ></textarea>
+
+
+            <button type="submit">
+                Enviar mensaje
+            </button>
+
+        </form>
+
+
+        <p id="respuesta"></p>
+
+    </section>
+
+
+    <!-- WHATSAPP FLOTANTE -->
+
+    <a
+        href="https://wa.me/18495953966?text=Hola%20Jade,%20vi%20tu%20página%20web%20y%20me%20gustaría%20conocerte%20más."
+        target="_blank"
+        class="whatsapp-flotante"
     >
+        💬
+    </a>
 
-    <label for="correo">Correo:</label>
-    <input
-        type="email"
-        id="correo"
-        name="email"
-        placeholder="Escribe tu correo"
-        required
-    >
 
-    <label for="mensajeContacto">Mensaje:</label>
-    <textarea
-        id="mensajeContacto"
-        name="mensaje"
-        placeholder="Escribe tu mensaje"
-        required
-    ></textarea>
-
-    <button type="submit">Enviar mensaje</button>
-
-</form>
-    <p id="respuesta"></p>
-</section>
-
+    <!-- JAVASCRIPT -->
 
     <script>
 
         function mostrarMensaje() {
-    let mensaje = document.getElementById("mensaje");
 
-    if (mensaje.classList.contains ("mostrar")) {
-        mensaje.classList.remove ("mostrar");
-    }   else {
-        mensaje.innerHTML = "Hiiii";
-        mensaje.classList.add("mostrar");
-    }
-}
+            let mensaje = document.getElementById("mensaje");
+
+            if (mensaje.classList.contains("mostrar")) {
+
+                mensaje.classList.remove("mostrar");
+
+            } else {
+
+                mensaje.innerHTML = "Hiiii";
+
+                mensaje.classList.add("mostrar");
+
+            }
+
+        }
+
     </script>
-<a
-    href="https://wa.me/18495953966?text=Hola%20Jade,%20vi%20tu%20página%20web%20y%20me%20gustaría%20conocerte%20más."
-    target="_blank"
-    class="whatsapp-flotante">
-    💬
-</a>
+
+
 </body>
 
 </html>
